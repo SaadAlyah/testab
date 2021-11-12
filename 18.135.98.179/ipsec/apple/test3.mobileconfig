@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>IKEv2</key>
+            <dict>
+              <key>OnDemandEnabled</key>
+              <integer>1</integer>
+              <key>OnDemandRules</key>
+              <array>
+                  <dict>
+                    <key>Action</key>
+                      <string>Connect</string>
+                    <key>InterfaceTypeMatch</key>
+                      <string>WiFi</string>
+                    <key>URLStringProbe</key>
+                      <string>http://captive.apple.com/hotspot-detect.html</string>
+                  </dict>
+                  <dict>
+                    <key>Action</key>
+                      <string>Connect</string>
+                    <key>InterfaceTypeMatch</key>
+                      <string>Cellular</string>
+                    <key>URLStringProbe</key>
+                      <string>http://captive.apple.com/hotspot-detect.html</string>
+                  </dict>
+                  <dict>
+                    <key>Action</key>
+                      <string>Disconnect</string>
+                  </dict>
+                </array>
+                <key>AuthenticationMethod</key>
+                <string>Certificate</string>
+                <key>ChildSecurityAssociationParameters</key>
+                <dict>
+                    <key>DiffieHellmanGroup</key>
+                    <integer>20</integer>
+                    <key>EncryptionAlgorithm</key>
+                    <string>AES-256-GCM</string>
+                    <key>IntegrityAlgorithm</key>
+                    <string>SHA2-512</string>
+                    <key>LifeTimeInMinutes</key>
+                    <integer>1440</integer>
+                </dict>
+                <key>DeadPeerDetectionRate</key>
+                <string>Medium</string>
+                <key>DisableMOBIKE</key>
+                <integer>0</integer>
+                <key>DisableRedirect</key>
+                <integer>1</integer>
+                <key>EnableCertificateRevocationCheck</key>
+                <integer>0</integer>
+                <key>EnablePFS</key>
+                <true/>
+                <key>IKESecurityAssociationParameters</key>
+                <dict>
+                    <key>DiffieHellmanGroup</key>
+                    <integer>20</integer>
+                    <key>EncryptionAlgorithm</key>
+                    <string>AES-256-GCM</string>
+                    <key>IntegrityAlgorithm</key>
+                    <string>SHA2-512</string>
+                    <key>LifeTimeInMinutes</key>
+                    <integer>1440</integer>
+                </dict>
+                <key>LocalIdentifier</key>
+                <string>test3@3915df64-2fbf-5289-b480-85f5c94ab233.algo</string>
+                <key>PayloadCertificateUUID</key>
+                <string>3AEBDC3B-3036-5374-88A1-30E9C5AA7520</string>
+                <key>CertificateType</key>
+                <string>ECDSA384</string>
+                <key>ServerCertificateIssuerCommonName</key>
+                <string>18.135.98.179</string>
+                <key>RemoteAddress</key>
+                <string>18.135.98.179</string>
+                <key>RemoteIdentifier</key>
+                <string>18.135.98.179</string>
+                <key>UseConfigurationAttributeInternalIPSubnet</key>
+                <integer>0</integer>
+            </dict>
+            <key>IPv4</key>
+            <dict>
+                <key>OverridePrimary</key>
+                <integer>1</integer>
+            </dict>
+            <key>PayloadDescription</key>
+            <string>Configures VPN settings</string>
+            <key>PayloadDisplayName</key>
+            <string>SATech-VPN</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.vpn.managed.23D9E02D-E7FF-5DFA-B907-431A8E1BA5C4</string>
+            <key>PayloadType</key>
+            <string>com.apple.vpn.managed</string>
+            <key>PayloadUUID</key>
+            <string>23D9E02D-E7FF-5DFA-B907-431A8E1BA5C4</string>
+            <key>PayloadVersion</key>
+            <real>1</real>
+            <key>Proxies</key>
+            <dict>
+                <key>HTTPEnable</key>
+                <integer>0</integer>
+                <key>HTTPSEnable</key>
+                <integer>0</integer>
+            </dict>
+            <key>UserDefinedName</key>
+            <string>AlgoVPN SATech-VPN IKEv2</string>
+            <key>VPNType</key>
+            <string>IKEv2</string>
+        </dict>
+        <dict>
+            <key>Password</key>
+            <string>ok1fdtckk</string>
+            <key>PayloadCertificateFileName</key>
+            <string>test3.p12</string>
+            <key>PayloadContent</key>
+            <data>
+            MIIEuQIBAzCCBH8GCSqGSIb3DQEHAaCCBHAEggRsMIIEaDCCAw8GCSqGSIb3DQEHBqCCAwAwggL8
+AgEAMIIC9QYJKoZIhvcNAQcBMBwGCiqGSIb3DQEMAQYwDgQI1Lv54At5LrwCAggAgIICyECSf5nY
+vjyrW6RJfGQlPA90eMb4WyakL9Un0l8kMe2mMfWT5qYRym4u8x2lm9nUrtuqU6xzWJuilR+9RzRR
+TIkducaMp3A32JhV6wZdzvPglcw4mI0xhQ0UvZwBVEa2SNuNbXkNbU/TzRAw51SCPMyiz2/g/QQt
+MgW9hZ6XQlgxsvegYhNc1hV1HWYyIMnL9jr3tQw1WjpZ68ACOdUqdim7tERxWplXBVRo8tVePyzD
+aWOITl8/qF5lc0kdBCK+WPVRtTi9yC/72RMJHTv4GVsNZGx4YTXtCNVSqMflcD+ky+YihGoIK2JX
+LB3JfrN35ASBvhv42bwap287jyf2Q0/LcKaoJ/zy6AKexKwX3GAxHhxfUq5/tLVXXz1zlcMjR8HB
+lz8JOA9eDpgxMEapI4Wxdp+a2H9OMHI5WnOi0xCwMIYig9TjgEDOxj0zvaKVmIXnWA0XbP2ufATC
+p71JWZUthNyBCVhwo83Fh2rEWbGlZcZFUPUS0BYO9ui/gnLztd8MZckCtDMRShTZxJBYFTY+XdB5
+LVNJifkYIFePy3CNQgeyV/ii9z+Dm2VSxo+9AxT6E2GwfVCxFquYYvomTE+MPK8FzHnB55KhVzj8
+UmP1MFNsUs1nqmyt95iRC+uqFVhs+JdNCFgUesyTjCvt+h+J7RzL8JIVC+bs5cZPZ++KuxVn1pYU
+sjKu1+MSnD7nvI4uYc2XSZLzWj+qJbVEDDLCJrr6mt+/NrAX6+XWbwQb2dbQ8Ly71fl7h1bKnppU
+JokNwEn2VickgPqmJc2wQrUbv5Apt8YZdRZfiHJUzBvm4MhBNbCZo5xZ3uPo7kWKJBvajl4qNjAB
+4QeCP9w6W8JY0l2LGj00He3123mfgo8hpC4D+hAezeKvDdj+CrPkVtf8QA9y15s1wTaaqWqjOEIm
+MoDFun7ao8b0U9AeLJIlzvNFzCylehYwggFRBgkqhkiG9w0BBwGgggFCBIIBPjCCATowggE2Bgsq
+hkiG9w0BDAoBAqCB5DCB4TAcBgoqhkiG9w0BDAEDMA4ECPzcvxJcM1V+AgIIAASBwFdxa163fj+P
+3Bh84g8Jxf25yDsn4Dv+hN5w5dreXxNBkx892Z+x0bG2XjGElSg2PbN0LEup6IWCF0u+QmlwPsMh
+dghQv18J/i159CQg9yhn6dlK2R3S1U95rAlo2bJlSrVLvUG0p83/wcDuS36pMifxZrDtWH03TWDD
+L2YoYZ45ipTsZxufcY8zDdzmaesSu1TJ4JVatNwemsc+DKtX5ZZsvKCU3432VYEv2TV27uKQfX//
+ODw3w53yJeWoKcB6QzFAMBkGCSqGSIb3DQEJFDEMHgoAdABlAHMAdAAzMCMGCSqGSIb3DQEJFTEW
+BBQVbYT2ek5tRraM+XyhbaGnf1OcPDAxMCEwCQYFKw4DAhoFAAQU4iZraK1jtAFuVr9eDvgSCWz3
+LiYECE5Lys1WhTbDAgIIAA==
+            </data>
+            <key>PayloadDescription</key>
+            <string>Adds a PKCS#12-formatted certificate</string>
+            <key>PayloadDisplayName</key>
+            <string>SATech-VPN</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.security.pkcs12.3AEBDC3B-3036-5374-88A1-30E9C5AA7520</string>
+            <key>PayloadType</key>
+            <string>com.apple.security.pkcs12</string>
+            <key>PayloadUUID</key>
+            <string>3AEBDC3B-3036-5374-88A1-30E9C5AA7520</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+        </dict>
+        <dict>
+            <key>PayloadCertificateFileName</key>
+            <string>ca.crt</string>
+            <key>PayloadContent</key>
+            <data>
+            LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUNxRENDQWk2Z0F3SUJBZ0lVV051eVRqbk9pVUlyUDlXbERQbzBaVEIwRC8wd0NnWUlLb1pJemowRUF3SXcKR0RFV01CUUdBMVVFQXd3Tk1UZ3VNVE0xTGprNExqRTNPVEFlRncweU1URXhNVEl4T0RBNU5UZGFGdzB6TVRFeApNVEF4T0RBNU5UZGFNQmd4RmpBVUJnTlZCQU1NRFRFNExqRXpOUzQ1T0M0eE56a3dkakFRQmdjcWhrak9QUUlCCkJnVXJnUVFBSWdOaUFBUjdWa0NSTVRMN0dTdDZjV0hHYlhSN1cwdGxyQ3Q1SDNjYThVVnA4Mnd1eXVXL1RGV20KV01SNDlxSGozRm15VHFBNG96WTVWYjNQZ1JGTlhnYUNQZk5CR01MbGdDTkJWRFUzNjRKM0dKaENDaEJkZmVyUwpmYy9YUUloVDRUOTVHMXlqZ2dFM01JSUJNekFkQmdOVkhRNEVGZ1FVbjRET3V1Y0JaYncreHVDS05WMUlhcnluCjFZa3dVd1lEVlIwakJFd3dTb0FVbjRET3V1Y0JaYncreHVDS05WMUlhcnluMVltaEhLUWFNQmd4RmpBVUJnTlYKQkFNTURURTRMakV6TlM0NU9DNHhOem1DRkZqYnNrNDV6b2xDS3ovVnBRejZOR1V3ZEEvOU1CSUdBMVVkRXdFQgovd1FJTUFZQkFmOENBUUF3Z1pzR0ExVWRIZ0VCL3dTQmtEQ0JqYUNCaWpBS2h3Z1NoMkt6Ly8vLy96QXJnaWt6Ck9URTFaR1kyTkMweVptSm1MVFV5T0RrdFlqUTRNQzA0TldZMVl6azBZV0l5TXpNdVlXeG5iekFyZ1Nrek9URTEKWkdZMk5DMHlabUptTFRVeU9Ea3RZalE0TUMwNE5XWTFZemswWVdJeU16TXVZV3huYnpBaWh5QXFCZEFjQk94KwpBR2xkRTFSYjd0UmYvLy8vLy8vLy8vLy8vLy8vLy8vLy96QUxCZ05WSFE4RUJBTUNBUVl3Q2dZSUtvWkl6ajBFCkF3SURhQUF3WlFJeEFJUmFRaDI2Sm5aNHErZlFac2gyVDBtd2hDWFlYNEFHMFBiMUpRQUYrckhkUkdHenZsam0KQWlzZ214Q2tiOGR6b1FJd1Z5QjJTTWJxOE91Y2xMQXhvcWpZNmZKaWZXUC8xSjRFak1VOW5FL3R6VVRwL1pPQwo2MHQ1U3R0Q1QyaGMxRUZtCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0=
+            </data>
+            <key>PayloadDescription</key>
+            <string>Adds a CA root certificate</string>
+            <key>PayloadDisplayName</key>
+            <string>SATech-VPN</string>
+            <key>PayloadIdentifier</key>
+            <string>com.apple.security.root.219ED049-EABB-5403-9911-5264CE1686E6</string>
+            <key>PayloadType</key>
+            <string>com.apple.security.root</string>
+            <key>PayloadUUID</key>
+            <string>219ED049-EABB-5403-9911-5264CE1686E6</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>AlgoVPN SATech-VPN IKEv2</string>
+    <key>PayloadIdentifier</key>
+    <string>donut.local.D41A0B9F-6C66-5E5A-A903-57C89F009D9E</string>
+    <key>PayloadOrganization</key>
+	<string>AlgoVPN</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>D96149BA-50A0-57D2-A379-6961CBD68EA4</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>

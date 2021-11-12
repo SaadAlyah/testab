@@ -1,0 +1,7 @@
+Host 18.135.98.179 SATech-VPN
+  HostName 18.135.98.179
+  User algo
+  Port 4160
+  IdentityFile /home/ubuntu/VPN/algo/configs/algo.pem
+  KeepAlive yes
+  ServerAliveInterval 30

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+<dict>
+	<key>IPv4</key>
+  <dict>
+      <key>OverridePrimary</key>
+      <integer>1</integer>
+  </dict>
+	<key>PayloadDescription</key>
+	<string>Configures VPN settings</string>
+	<key>PayloadDisplayName</key>
+	<string>SATech-VPN</string>
+	<key>PayloadIdentifier</key>
+	<string>com.apple.vpn.managed.SATech-VPN9D18FBEE-C185-5F8B-9A48-C873BB65BB8E</string>
+	<key>PayloadType</key>
+	<string>com.apple.vpn.managed</string>
+	<key>PayloadUUID</key>
+	<string>SATech-VPN9D18FBEE-C185-5F8B-9A48-C873BB65BB8E</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>Proxies</key>
+	<dict>
+		<key>HTTPEnable</key>
+		<integer>0</integer>
+		<key>HTTPSEnable</key>
+		<integer>0</integer>
+	</dict>
+	<key>UserDefinedName</key>
+	<string>AlgoVPN SATech-VPN</string>
+	<key>VPN</key>
+	<dict>
+    <key>OnDemandEnabled</key>
+    <integer>1</integer>
+    <key>OnDemandRules</key>
+    <array>
+      <dict>
+        <key>Action</key>
+        <string>Connect</string>
+        <key>InterfaceTypeMatch</key>
+        <string>WiFi</string>
+        <key>URLStringProbe</key>
+        <string>http://captive.apple.com/hotspot-detect.html</string>
+      </dict>
+      <dict>
+        <key>Action</key>
+        <string>Connect</string>
+        <key>InterfaceTypeMatch</key>
+        <string>Cellular</string>
+        <key>URLStringProbe</key>
+        <string>http://captive.apple.com/hotspot-detect.html</string>
+      </dict>
+      <dict>
+        <key>Action</key>
+        <string>Disconnect</string>
+      </dict>
+    </array>
+		<key>AuthenticationMethod</key>
+		<string>Password</string>
+		<key>RemoteAddress</key>
+		<string>18.135.98.179:51820</string>
+	</dict>
+	<key>VPNSubType</key>
+	<string>com.wireguard.ios</string>
+	<key>VPNType</key>
+	<string>VPN</string>
+	<key>VendorConfig</key>
+	<dict>
+		<key>WgQuickConfig</key>
+		<string>[Interface]
+        PrivateKey = wMwkLbR6lgFgDq+ebLOtQ6L50RhGSxIlQuhw3NNpT24=
+        Address = 10.49.0.3 ,2001:db8:a160::3
+        DNS =  172.23.54.220, fd00::7:36dc 
+
+        [Peer]
+        PublicKey = R6xFJqHRh1vk6lsWIJgRt2Djttj604RolYfurCUOdAg=
+        PresharedKey = haa/cHIlJxyq+/IVb56j2pdF5j+sbplM53eGDJ/OSOQ=
+        AllowedIPs = 0.0.0.0/0,::/0
+        Endpoint = 18.135.98.179:51820
+</string>
+	</dict>
+</dict>  </array>
+  <key>PayloadDisplayName</key>
+  <string>AlgoVPN SATech-VPN WireGuard</string>
+  <key>PayloadIdentifier</key>
+  <string>donut.local.D7E8E597-35A7-5F25-B381-3673049E7F24</string>
+  <key>PayloadOrganization</key>
+  <string>AlgoVPN</string>
+  <key>PayloadRemovalDisallowed</key>
+  <false/>
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadUUID</key>
+  <string>50FC0520-08EB-5772-9730-4E8805C6CF04</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+</dict>
+</plist>
